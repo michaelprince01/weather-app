@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik', serif;
+  background-color: #141212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.weather-app {
+  text-align: center;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+}
+
+h2 {
+  font-family: 'Worksans', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #141212;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.city-input {
+  width: 100%;
+  font-family: 'Rubik', serif;
+  font-size: 0.9rem;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+}
+
+.city-input.error {
+  border-color: hsl(0, 94%, 66%);
+  border-radius: 4px 4px 0 0;
+}
+
+.city-input:focus {
+  border-color: hsl(231, 69%, 60%);
+}
+
+.icon-error {
+  display: none;
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  background: hsl(0, 94%, 66%);
+  color: #fff;
+  font-size: 12px;
+  padding: 0.5em;
+  border-radius: 0 0 4px 4px;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+
+#fetch-weather {
+  font-family: 'Rubik', serif;
+  font-size: 0.9rem;
+  padding: 10px 15px;
+  background-color: hsl(231, 69%, 60%);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#fetch-weather:hover {
+  background-color: #0056b3;
+}
+
+.weather-display span {
+  font-weight: 500;
+}
+
+.weather-display p {
+  font-size: 14px;
+}
+
+.weather-info {
+  margin: 10px 0;
+}
+
+.weather-img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+}
